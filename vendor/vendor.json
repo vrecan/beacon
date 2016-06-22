@@ -3,11 +3,10 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "ByjOyxTNsT5QiQGRDW7fQGj4lQA=",
-			"origin": "github.com/vrecan/death/vendor/github.com/cihub/seelog",
+			"checksumSHA1": "9xxshMFvoZQY2+7IDknPxfNJyaM=",
 			"path": "github.com/cihub/seelog",
-			"revision": "f65d20c72cb04f987dcc757dae8b62c5cbda5886",
-			"revisionTime": "2016-06-09T16:57:02Z"
+			"revision": "83d0dcad636b63c066856045962befa246e00c79",
+			"revisionTime": "2014-05-19T12:30:49Z"
 		},
 		{
 			"checksumSHA1": "2sj/DbXoXdnPAfjAEyhS0Jj5QL0=",
