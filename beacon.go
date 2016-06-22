@@ -8,11 +8,10 @@ import (
 )
 
 func main() {
-	log.New(log.Ctx{"module": "beacon/main"})
-	log.Info("starting", log.Ctx{"event": "start"})
+	mlog := log.New(log.Ctx{"module": "beacon/main"})
+	mlog.Info("starting", log.Ctx{"event": "start"})
 	death := death.NewDeath(SYS.SIGINT, SYS.SIGTERM)
 	death.WaitForDeathWithFunc(func() {
-		log.Info("exiting", log.Ctx{"event": "close"})
+		mlog.Info("exiting", log.Ctx{"event": "close"})
 	})
-
 }
