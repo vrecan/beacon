@@ -57,46 +57,34 @@
 			"revisionTime": "2015-12-11T00:06:21Z"
 		},
 		{
-			"checksumSHA1": "+pG2EZPfr5veueNdr1ZWAkqk/KQ=",
-			"path": "github.com/shirou/gopsutil/cpu",
-			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
-			"revisionTime": "2016-06-01T22:03:11Z"
-		},
-		{
-			"checksumSHA1": "aZQznu+kib9gfx3veFRdMMeaVR4=",
+			"checksumSHA1": "tV0skuyoy255WiTlKjd24T+5DeU=",
 			"path": "github.com/shirou/gopsutil/host",
-			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
-			"revisionTime": "2016-06-01T22:03:11Z"
+			"revision": "2728d81cdef579d6ed88d2fd5c71e85aa83eaba8",
+			"revisionTime": "2016-06-25T09:45:55Z"
 		},
 		{
 			"checksumSHA1": "zJZyxS96XiEnDJSZkWwXtktziRY=",
 			"path": "github.com/shirou/gopsutil/internal/common",
-			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
-			"revisionTime": "2016-06-01T22:03:11Z"
+			"revision": "2728d81cdef579d6ed88d2fd5c71e85aa83eaba8",
+			"revisionTime": "2016-06-25T09:45:55Z"
 		},
 		{
 			"checksumSHA1": "LUipApIqOLcKbZfwXknNCifGles=",
 			"path": "github.com/shirou/gopsutil/mem",
-			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
-			"revisionTime": "2016-06-01T22:03:11Z"
+			"revision": "2728d81cdef579d6ed88d2fd5c71e85aa83eaba8",
+			"revisionTime": "2016-06-25T09:45:55Z"
 		},
 		{
-			"checksumSHA1": "wBtsuoHXVGo9wi0Nh3x3jknCu4c=",
+			"checksumSHA1": "k57srhFXKSysrFdEh3b6oiO48hw=",
 			"path": "github.com/shirou/gopsutil/net",
-			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
-			"revisionTime": "2016-06-01T22:03:11Z"
+			"revision": "2728d81cdef579d6ed88d2fd5c71e85aa83eaba8",
+			"revisionTime": "2016-06-25T09:45:55Z"
 		},
 		{
-			"checksumSHA1": "3KxPVNh440OIv4AXpT2aWQ0rO7I=",
+			"checksumSHA1": "m04nwQWkmfvW/8A6b/WfH5NcdHI=",
 			"path": "github.com/shirou/gopsutil/process",
-			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
-			"revisionTime": "2016-06-01T22:03:11Z"
-		},
-		{
-			"checksumSHA1": "1eyDAmLQeWwdVKmfPzCGo28u4kw=",
-			"path": "github.com/shirou/w32",
-			"revision": "3c9377fc6748f222729a8270fe2775d149a249ad",
-			"revisionTime": "2016-02-04T00:35:29Z"
+			"revision": "2728d81cdef579d6ed88d2fd5c71e85aa83eaba8",
+			"revisionTime": "2016-06-25T09:45:55Z"
 		},
 		{
 			"checksumSHA1": "dKogCJ9FoqapRl4ePSxgmdc1vHs=",
