@@ -3,10 +3,28 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "K3IjadQQFTDSMib8tbdhpUCdvKY=",
+			"path": "github.com/StackExchange/wmi",
+			"revision": "f3e2bae1e0cb5aef83e319133eabfee30013a4a5",
+			"revisionTime": "2015-05-20T19:46:26Z"
+		},
+		{
 			"checksumSHA1": "9xxshMFvoZQY2+7IDknPxfNJyaM=",
 			"path": "github.com/cihub/seelog",
 			"revision": "83d0dcad636b63c066856045962befa246e00c79",
 			"revisionTime": "2014-05-19T12:30:49Z"
+		},
+		{
+			"checksumSHA1": "chuH+rt7NcP0fte9Gj3L4gigNh4=",
+			"path": "github.com/go-ole/go-ole",
+			"revision": "572eabb84c424e76a0d39d31510dd7dfd62f70b2",
+			"revisionTime": "2016-03-11T03:06:26Z"
+		},
+		{
+			"checksumSHA1": "qLYVTQDhgrVIeZ2KI9eZV51mmug=",
+			"path": "github.com/go-ole/go-ole/oleutil",
+			"revision": "572eabb84c424e76a0d39d31510dd7dfd62f70b2",
+			"revisionTime": "2016-03-11T03:06:26Z"
 		},
 		{
 			"checksumSHA1": "2sj/DbXoXdnPAfjAEyhS0Jj5QL0=",
@@ -33,10 +51,70 @@
 			"revisionTime": "2016-06-02T15:08:27Z"
 		},
 		{
+			"checksumSHA1": "NkbetqlpWBi3gP08JDneC+axTKw=",
+			"path": "github.com/mattn/go-isatty",
+			"revision": "56b76bdf51f7708750eac80fa38b952bb9f32639",
+			"revisionTime": "2015-12-11T00:06:21Z"
+		},
+		{
+			"checksumSHA1": "+pG2EZPfr5veueNdr1ZWAkqk/KQ=",
+			"path": "github.com/shirou/gopsutil/cpu",
+			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
+			"revisionTime": "2016-06-01T22:03:11Z"
+		},
+		{
+			"checksumSHA1": "aZQznu+kib9gfx3veFRdMMeaVR4=",
+			"path": "github.com/shirou/gopsutil/host",
+			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
+			"revisionTime": "2016-06-01T22:03:11Z"
+		},
+		{
+			"checksumSHA1": "zJZyxS96XiEnDJSZkWwXtktziRY=",
+			"path": "github.com/shirou/gopsutil/internal/common",
+			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
+			"revisionTime": "2016-06-01T22:03:11Z"
+		},
+		{
+			"checksumSHA1": "LUipApIqOLcKbZfwXknNCifGles=",
+			"path": "github.com/shirou/gopsutil/mem",
+			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
+			"revisionTime": "2016-06-01T22:03:11Z"
+		},
+		{
+			"checksumSHA1": "wBtsuoHXVGo9wi0Nh3x3jknCu4c=",
+			"path": "github.com/shirou/gopsutil/net",
+			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
+			"revisionTime": "2016-06-01T22:03:11Z"
+		},
+		{
+			"checksumSHA1": "3KxPVNh440OIv4AXpT2aWQ0rO7I=",
+			"path": "github.com/shirou/gopsutil/process",
+			"revision": "9dbebcf46eb3874e728ff2e3b7380fb41e577f42",
+			"revisionTime": "2016-06-01T22:03:11Z"
+		},
+		{
+			"checksumSHA1": "1eyDAmLQeWwdVKmfPzCGo28u4kw=",
+			"path": "github.com/shirou/w32",
+			"revision": "3c9377fc6748f222729a8270fe2775d149a249ad",
+			"revisionTime": "2016-02-04T00:35:29Z"
+		},
+		{
 			"checksumSHA1": "dKogCJ9FoqapRl4ePSxgmdc1vHs=",
 			"path": "github.com/vrecan/death",
 			"revision": "f65d20c72cb04f987dcc757dae8b62c5cbda5886",
 			"revisionTime": "2016-06-09T16:57:02Z"
+		},
+		{
+			"checksumSHA1": "EIGUe9rpia/Ybh6j9K/wK78YfKk=",
+			"path": "github.com/vrecan/life",
+			"revision": "7468b6a3348608b0c35f423e03f32c1e14d4ac9d",
+			"revisionTime": "2016-03-05T20:31:05Z"
+		},
+		{
+			"checksumSHA1": "/SO2lR1gexhKSppnoHk8iflTre4=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "5eaf0df67e70d6997a9fe0ed24383fa1b01638d3",
+			"revisionTime": "2016-02-22T16:57:57Z"
 		}
 	],
 	"rootPath": "github.com/vrecan/beacon"
