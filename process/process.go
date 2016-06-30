@@ -11,39 +11,17 @@ import (
 type Process struct {
 	*L.Life
 	l    log.Logger
-	Pids []PROC.Process
+	Pids map[int32]PROC.Process
 }
 
 func NewProcess() Process {
 	p := Process{
 		Life: L.NewLife(),
 		l:    log.New(log.Ctx{"module": "beacon/process"}),
+		Pids: make(map[int32]PROC.Process, 0),
 	}
 	p.Life.SetRun(p.run)
 	return p
-}
-
-func (p *Process) removeInvalidPids(pids []int32) {
-	var idsToRemove []int
-	for i, oldPid := range p.Pids {
-		var exists bool
-		for _, pid := range pids {
-			if oldPid.Pid == pid {
-				exists = true
-			}
-			if !exists {
-				n, _ := oldPid.Name()
-				p.l.Info("pids", log.Ctx{"removing": n})
-				idsToRemove = append(idsToRemove, i)
-				//remove items that don't exist from the old pids
-				// p.Pids[i] = p.Pids[len(p.Pids)-1]
-				// p.Pids = p.Pids[:len(p.Pids)-1]
-			}
-		}
-	}
-	for _, id := range p.Pids {
-
-	}
 }
 
 func (p *Process) gatherAllCurrentPidStats() {
@@ -52,22 +30,34 @@ func (p *Process) gatherAllCurrentPidStats() {
 		p.l.Error("pids", err)
 	}
 	p.l.Info("pids", log.Ctx{"len": len(p.Pids)})
-	p.removeInvalidPids(pids)
-
+	adds := 0
 	for _, pid := range pids {
-		ps, err := PROC.NewProcess(pid)
-		if nil != err {
-			p.l.Error("pids", err)
-			continue
+		_, exist := p.Pids[pid]
+		if !exist {
+			adds++
+			ps, err := PROC.NewProcess(pid)
+			if nil != err {
+				p.l.Error("pids", err)
+				continue
+			}
+			p.Pids[pid] = *ps
 		}
-		p.Pids = append(p.Pids, *ps)
-		// name, err := ps.Name()
-		// if nil != err {
-		// p.l.Error("pids", err)
-		// }
-		// fmt.Println("NAME: ", name)
-		// p.l.Info("pids", log.Ctx{"name": name})
 	}
+	//remove dead pids and get a count
+	deletes := 0
+	for pid, _ := range p.Pids {
+		exists := false
+		for _, npid := range pids {
+			if pid == npid {
+				exists = true
+			}
+		}
+		if !exists {
+			delete(p.Pids, pid)
+			deletes++
+		}
+	}
+	p.l.Info("pids", log.Ctx{"deleted": deletes, "added": adds})
 }
 
 func (p Process) run() {
