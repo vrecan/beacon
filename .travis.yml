@@ -6,5 +6,5 @@ go:
 install:
 - go get golang.org/x/tools/cmd/cover
 - export PATH=$PATH:$HOME/gopath/bin
-- go install github.com/vrecan/beacon/./...
-script: go test ./... -cover --race
+- go install $(go list github.com/vrecan/beacon/./... | grep -v /vendor/)
+script: go test $(go list ./... | grep -v /vendor/) -cover --race -timeout=300s 
